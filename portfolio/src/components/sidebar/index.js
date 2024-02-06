@@ -1,18 +1,13 @@
 import './index.scss';
-//import LogoS from '../../assets/images/logo-s.png';
-//import LogoSubtitle from '../../assets/images/logo_sub.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faHome, faUser } from '@fortawesome/free-solid-svg-icons';
-import { NavLink,Link } from 'react-router-dom'; 
+import { NavLink } from 'react-router-dom'; 
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 const Sidebar = () => {
     return (
         <div className="navbar">
-           <Link exact activeClassName="active" to="/">
-                {/* <img className='logo' src={LogoS} alt="logo"/> */}
-                {/* <img className="sub-logo" src={LogoSubtitle} alt="slowdown"/> */}
-            </Link>
-
+            {/* Removed unused <Link> component */}
             <nav>
                 <NavLink exact activeClassName="active" to="/">
                     <FontAwesomeIcon icon={faHome} color="aqua"/>
@@ -24,7 +19,20 @@ const Sidebar = () => {
                     <FontAwesomeIcon icon={faEnvelope} color="aqua"/>
                 </NavLink>
             </nav>
-            
+            {/* Added an unordered list with a list item containing a LinkedIn link */}
+            <ul>
+                <li>
+                    <a target='_blank' rel='noreferrer' href='https://www.linkedin.com/in/mihisankasandudeeptha/'>
+                        <FontAwesomeIcon icon={faLinkedin} color="aqua"/>
+                    </a>
+                </li>
+
+                <li>
+                    <a target='_blank' rel='noreferrer' href='https://github.com/Mihisanka'>
+                        <FontAwesomeIcon icon={faGithub} color="aqua"/>
+                    </a>
+                </li>
+            </ul>
         </div>
     );
 }
