@@ -5,4 +5,5 @@
   "semi": false,
   "singleQuote": true
 }
-/////////////////////////////////////////////
+/////////////////////////////// home //////////////
+ <link to="/contact" className='flat-button' >CONTACT ME</link>
