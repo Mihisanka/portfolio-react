@@ -11,7 +11,7 @@
 
     h1{
         color: antiquewhite;
-        font-size: 53px;
+        font-size: 70px;
         margin: 0;
         font-family: 'Coolvetica';
         font-weight: 400;
@@ -21,7 +21,7 @@
             content: '<h1>';
             font-family: 'La Belle Aurore';
             color: aqua;
-            font-size: 17px;
+            font-size: 19px;
             position: absolute;
             margin-top: -40px;
         }
@@ -30,7 +30,7 @@
             content: '<h1>';
             font-family: 'La Belle Aurore';
             color: aqua;
-            font-size: 17px;
+            font-size: 19px;
             position: absolute;
             margin-top: 18px;
             margin-left: 20px;
@@ -40,7 +40,7 @@
 
         img{
             width: 32px;
-            margin-left: 20px;
+            margin-left: 25px;
             opacity: 0;
             height: auto;
             animation: rotateIn 1s linear both;
@@ -52,7 +52,7 @@
         color: rgb(136, 137, 138);
         margin-top: 20px; 
         font-weight: 400;
-        font-size: 11px;
+        font-size: 15px;
         padding-left:  20px;
         padding-top: 10px;
         font-family: sans-serif;
