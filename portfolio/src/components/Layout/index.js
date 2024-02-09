@@ -1,6 +1,8 @@
 import { Outlet } from 'react-router-dom';
-import Sidebar from '../sidebar'; // Assuming sidebar.js is in the parent directory
+import Sidebar from '../sidebar'; 
+// Assuming sidebar.js is in the parent directory
 import './index.scss';
+
 
 const Layout = () => {
     return (
