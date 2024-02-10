@@ -19,11 +19,10 @@ const jobArray = ['w', 'e', 'b', '', 'd', 'e', 'v', 'e', 'l', 'o', 'p', 'e', 'r'
         <div className="text-zone">
         <h1>
           <span className={letterClass}>H</span>
-          <span className={'${letterClass}_12'}> i,</span>
-         
-        <br/>
-          <span className={'${letterClass}_13'}>I'</span>
-          <span className={'${letterClass}_14'}>m</span>
+          <span className={`${letterClass} _12`}>i,</span>
+            <br />
+            <span className={`${letterClass} _13`}>I</span>
+            <span className={`${letterClass} _14`}>'m</span>
             <img src={LogoTitle} alt="developer"/>
             <AnimatedLetters letterClass={letterClass} startArray={nameArray} idx={15} />
             <br/>
@@ -33,6 +32,7 @@ const jobArray = ['w', 'e', 'b', '', 'd', 'e', 'v', 'e', 'l', 'o', 'p', 'e', 'r'
              Background in SofweraEnginering.</h2>
             <Link to="/contact" className="flat-button">Contact Me</Link>
 
+          
         </div>
 
     </div>

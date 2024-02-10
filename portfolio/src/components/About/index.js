@@ -1,15 +1,22 @@
 import React from 'react';
 import AnimatedLetters from '../AnimatedLetters';
 import './index.scss';
+import { useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faAngular, faCss3, faGithub, faHtml5, faJsSquare, faLinkedin, faReact } from '@fortawesome/free-brands-svg-icons';
+import Loader from 'react-loaders'
 
 const About = () => {
+  const [letterClass, /*setLetterClass*/] = useState('text-animate'); 
   return (
+    <>
     <div className='container about-us'>
         <div className='text-zone'>
             <h1>
         <AnimatedLetters
-             startArray={['A', 'b', 'o', 'u', 't']}
-             endArray={['M', 'e', '.']}
+            letterClass={letterClass}
+            startArray={['A', 'b', 'o', 'u', 't',' ','M', 'e', '.']}
+             
              idx={15}
              />
              </h1>
@@ -27,9 +34,33 @@ const About = () => {
             person, father of a beautiful daughter, a sports fanatic,
             photography enthusiast, and tech-obsessed!!!
           </p>
-      
         </div>
+        <div className="stage-cube-cont"> 
+            <div className="cubespinner">
+                <div className='face1'>
+                  <FontAwesomeIcon icon={faHtml5} color=""/>
+                </div>
+                <div className='face2'>
+                  <FontAwesomeIcon icon={faCss3} color=""/>
+                </div>
+                <div className='face3'>
+                  <FontAwesomeIcon icon={faReact} color=""/>
+                </div>
+                <div className='face4'>
+                  <FontAwesomeIcon icon={faJsSquare} color=""/>
+                </div>
+                <div className='face5'>
+                  <FontAwesomeIcon icon={faLinkedin} color=""/>
+                </div>
+                <div className='face6'>
+                  <FontAwesomeIcon icon={faGithub} color=""/>
+                </div>
+            </div>
+
+          </div>
     </div>
+    <Loader type="pacman"/>
+    </>
   );
 };
 
