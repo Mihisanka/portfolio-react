@@ -1,8 +1,9 @@
-import React, { useEffect, useState } from 'react'
+import React, {  useState } from 'react'
 import LogoTitle from '../../assets/images/logo-s.png'
 import './index.scss';
 import { Link } from 'react-router-dom';
 import AnimatedLetters from '../AnimatedLetters';
+import Loader from 'react-loaders'
 
 
  const Home=() => {
@@ -15,6 +16,7 @@ const jobArray = ['w', 'e', 'b', '', 'd', 'e', 'v', 'e', 'l', 'o', 'p', 'e', 'r'
 
 
   return (
+    <>
     <div className="container home-page">
         <div className="text-zone">
         <h1>
@@ -36,6 +38,8 @@ const jobArray = ['w', 'e', 'b', '', 'd', 'e', 'v', 'e', 'l', 'o', 'p', 'e', 'r'
         </div>
 
     </div>
+     <Loader type="pacman"/>
+     </>
   )
 }
 

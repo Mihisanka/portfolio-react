@@ -3,7 +3,7 @@ import AnimatedLetters from '../AnimatedLetters';
 import './index.scss';
 import { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faAngular, faCss3, faGithub, faHtml5, faJsSquare, faLinkedin, faReact } from '@fortawesome/free-brands-svg-icons';
+import { faCss3, faGithub, faHtml5, faJsSquare, faLinkedin, faReact } from '@fortawesome/free-brands-svg-icons';
 import Loader from 'react-loaders'
 
 const About = () => {
@@ -21,8 +21,8 @@ const About = () => {
              />
              </h1>
              <p>
-            I'm a very ambitious front-end developer looking for a role in an
-            established IT company with the opportunity to work with the latest
+            I'm a very ambitious front-end developer looking for a role in
+            an established IT company with the opportunity to work with the latest
             technologies on challenging and diverse projects.
           </p>
           <p align="LEFT">
